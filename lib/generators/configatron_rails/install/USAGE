@@ -2,7 +2,7 @@ Description:
     Generate a barebones configuration file for configatron.
 
 Example:
-    ./script/generate config
+    rails generate configatron_rails:install
 
     This will create:
         config/config.yml
