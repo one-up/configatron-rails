@@ -12,7 +12,8 @@ module ConfigatronRails
 
       private
       def environments
-        YAML.load_file("config/database.yml").keys
+        yml = File.join(Rails.root, "config", "database.yml")
+        YAML.load_file(yml).keys
       end
     end
   end
